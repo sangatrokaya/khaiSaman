@@ -33,7 +33,7 @@ const page = () => {
 
             <NavbarContent as="div" className="items-center" justify="end">
                 <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">Login</Button>
-                <Link href="/register" color="success">Register</Link>
+                <Link href="/register"><Button type="button" color="success">Register</Button></Link>
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
