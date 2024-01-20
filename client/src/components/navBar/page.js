@@ -1,7 +1,8 @@
 'use client'
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Link, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Input, DropdownItem, DropdownTrigger, Dropdown, DropdownMenu, Avatar, Button, link } from "@nextui-org/react";
 import React from 'react'
 import Image from "next/image";
+import Link from "next/link";
 
 const page = () => {
     return (
@@ -33,7 +34,7 @@ const page = () => {
 
             <NavbarContent as="div" className="items-center" justify="end">
                 <Button radius="full" className="bg-gradient-to-tr from-pink-500 to-yellow-500 text-white shadow-lg">Login</Button>
-                <Link href="/register"><Button type="button" color="success">Register</Button></Link>
+                <Button as = {Link} href="/register" color="success">Register</Button>
                 <Dropdown placement="bottom-end">
                     <DropdownTrigger>
                         <Avatar
