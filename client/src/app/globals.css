@@ -16,36 +16,3 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-.register-bio, .register-bio1 {
-  text-align: center;
-}
-
-.register-form-body {
-  width:400px;
-  margin:5vh auto 0 auto;
-  background-color: rgb(130, 200, 153);
-  border-radius: 5px;
-  padding:30px;
-}
-
-.register-button {
-  background-color: #792099;
-  color:white;
-  border: 1px solid #792099;
-  border-radius: 5px;
-  padding:10px;
-  margin:20px 0px;
-  cursor:pointer;
-  font-size:20px;
-  width:100%;
-}

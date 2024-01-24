@@ -3,6 +3,8 @@ import React from 'react';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import { Button, Input } from "@nextui-org/react";
+import styles from './styles.module.css'
+
 
 
 const SignupForm = () => {
@@ -49,9 +51,16 @@ const SignupForm = () => {
   });
   // console.log(formik)
   return (
-    <form onSubmit={formik.handleSubmit}>
-      <div className="register-form-body">
-        <label htmlFor="fullName">Full Name</label>s
+    <form className={styles.formfields} onSubmit={formik.handleSubmit}>
+      <label htmlFor='description'>
+        <h1 className={styles.heading}>Here for Register!</h1>
+        <p className={styles.disclaimar}>🕵️‍♂️ Hey there,</p>
+        <p className={styles.disclaimar}>Are you ready to get registered?</p>
+        <p className={styles.disclaimar}>Remember, only legit credentials can get you registered.</p>
+        <p className={styles.disclaimar}>No invisible ink or secret handshakes, please! 🦸‍♀️💻</p>
+      </label>
+      <br/>
+        <label htmlFor="fullName">Full Name</label>
         <Input
           id="fullName"
           name="fullName"
@@ -117,8 +126,7 @@ const SignupForm = () => {
 
         <br />
 
-        <Button className='register-botton' type="submit">Submit</Button>
-      </div>
+        <Button className='registerBotton' type="submit">Submit</Button>
     </form>
   );
 };

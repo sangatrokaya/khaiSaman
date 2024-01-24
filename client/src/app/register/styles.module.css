@@ -1,0 +1,40 @@
+/* body {
+    color: rgb(var(--foreground-rgb));
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        rgb(var(--background-end-rgb))
+      )
+      rgb(var(--background-start-rgb));
+  } */
+  
+  .heading {
+    text-align: center;
+    font-size: xx-large;
+  }
+  
+  .disclaimar {
+    text-align: center;
+    font-size: 11px;
+    color: rgb(182, 187, 190);
+  }
+
+  .formfields {
+    width:443px;
+    margin:auto;
+    background-color: rgb(52 145 82);
+    border-radius: 5px;
+    padding:22px;
+  }
+  
+  .registerBotton {
+    background-color: #792099;
+    color:white;
+    border: 1px solid #792099;
+    border-radius: 5px;
+    padding:10px;
+    margin:20px 0px;
+    cursor:pointer;
+    font-size:20px;
+    width:100%;
+  }
